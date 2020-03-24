@@ -1,17 +1,21 @@
-# 🧰 Simple TypeScript Starter | 2020
+# TypeScript Boilerplate
 
-> We talk about a lot of **advanced Node.js and TypeScript** concepts on [the blog](https://khalilstemmler.com), particularly focused around Domain-Driven Design and large-scale enterprise application patterns. However, I received a few emails from readers that were interested in seeing what a basic TypeScript starter project looks like. So I've put together just that.
+## Quick start
 
-### Scripts
+1. Clone the repo or click on **Use this template**
+2. Open `package.json` and change the values of: _name_, _description_, _repository_, _keywords_, _author_
+3. Run `yarn install`
 
-#### `npm run start:dev`
+## Scripts
+
+`yarn start`
+
+Starts the app in production by first building the project with `yarn build`, and then executing the compiled JavaScript at `build/index.js`.
+
+`yarn start:watch`
 
 Starts the application in development using `nodemon` and `ts-node` to do hot reloading.
 
-#### `npm run build`
+`yarn build`
 
-Builds the app at `build`, cleaning the folder first.
-
-#### `npm run start`
-
-Starts the app in production by first building the project with `npm run build`, and then executing the compiled JavaScript at `build/index.js`.
+Builds the app in `/build`, cleaning the folder first.
