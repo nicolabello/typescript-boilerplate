@@ -65,7 +65,7 @@
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
   },
   "exclude": [
-    "*.config.js",
+    "*.config.*",
     "**/*.test.*",
     "**/*.spec.*"
   ]

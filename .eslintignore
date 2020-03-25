@@ -1,11 +1,14 @@
-# Don't ever lint node_modules
+# Dependencies folder
 node_modules
 
-# Don't lint build output
-build
+# Anything starting with .
+.*
 
-# Don't lint nyc coverage output
+# Coverage output
 coverage
 
-# Don't lint configs
-*.config.js
+# Configs
+*.config.*
+
+# Build output
+build
