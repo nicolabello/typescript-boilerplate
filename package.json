@@ -1,21 +1,24 @@
 {
   "name": "typescript-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Project template to kickstart a new TypeScript project in seconds",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
+    "start": "nodemon",
     "build": "rimraf ./build && tsc",
-    "start": "yarn build && node build/index.js",
-    "start:watch": "nodemon",
+    "build:start": "yarn build && node build/index.js",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "lint": "eslint ./src --ext .ts",
     "lint:fix": "yarn lint --fix",
     "prettier:format": "prettier --config .prettierrc 'src/**/*.ts' --write",
-    "prettier:watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}"
+    "prettier:watch": "onchange 'src/**/*.ts' -- prettier --write {{changed}}",
+    "release": "standard-version"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn prettier:format && yarn lint"
+      "pre-commit": "yarn prettier:format && yarn lint:fix"
     }
   },
   "repository": {
@@ -31,6 +34,7 @@
   "author": "Nicola Bello <nicola.bello.3@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^25.1.4",
     "@types/node": "^13.9.3",
     "@typescript-eslint/eslint-plugin": "^2.21.0",
     "@typescript-eslint/parser": "^2.21.0",
@@ -38,11 +42,16 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.2.3",
+    "jest": "^25.1.0",
     "nodemon": "^2.0.2",
     "onchange": "^6.1.0",
     "prettier": "^2.0.2",
     "rimraf": "^3.0.0",
+    "ts-jest": "^25.2.1",
     "ts-node": "^8.3.0",
     "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "standard-version": "^7.1.0"
   }
 }
