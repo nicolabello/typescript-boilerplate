@@ -2,20 +2,63 @@
 
 ## Quick start
 
-1. Clone the repo or click on **Use this template**
-2. Open `package.json` and change the values of: _name_, _description_, _repository_, _keywords_, _author_
+Make sure [Node.js](https://nodejs.org/en/download), [Yarn](https://yarnpkg.com/lang/en/docs/install/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) are installed in your system before starting.
+
+1. Clone the repo or click on **Use this template** (Green button on top of this page)
+2. Open `package.json` in your editor and change the values of: **name**, **description**, **repository**, **keywords**, **author**
 3. Run `yarn install`
+
+You are ready to go: edit `src/index.ts` and run `yarn start` to execute it.
 
 ## Scripts
 
-`yarn start`
+#### `yarn start`
 
-Starts the app in production by first building the project with `yarn build`, and then executing the compiled JavaScript at `build/index.js`.
+Starts the app with hot reloading.\
+The app will refresh every time a file is changed in the `src` folder.
 
-`yarn start:watch`
+#### `yarn build`
 
-Starts the application in development using `nodemon` and `ts-node` to do hot reloading.
+Builds the app in the `build` folder.
 
-`yarn build`
+#### `yarn build:start`
 
-Builds the app in `/build`, cleaning the folder first.
+Builds the app in the `build` folder and starts it.
+
+#### `yarn test`
+
+Runs the tests.
+
+#### `yarn release`
+
+Generates the changelog and increase the version from commit messages.
+
+The most common convention for commit messages is the Angular convention which is [detailed here](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines).
+
+## Tools
+
+#### [Jest](https://jestjs.io)
+
+Testing framework.
+
+#### [ESLint](https://eslint.org/)
+
+Code syntax analyzer.
+
+#### [Prettier](https://prettier.io)
+
+Code formatter.
+
+#### [Husky](https://github.com/typicode/husky)
+
+Allows to run scripts on [git hooks](https://git-scm.com/docs/githooks#_hooks#readme)
+
+#### [Standard Version](https://github.com/conventional-changelog/standard-version#readme)
+
+Automatic changelog generation powered by [Conventional Commits](https://conventionalcommits.org).
+
+## References
+
+[How to Setup a TypeScript + Node.js Project](https://khalilstemmler.com/blogs/typescript/node-starter-project)
+
+[TypeScript Deep Dive](https://basarat.gitbook.io/typescript)

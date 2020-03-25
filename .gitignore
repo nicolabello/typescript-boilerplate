@@ -106,8 +106,8 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# JetBrains IDEs config
+.idea
+
 # Build output
 build
-
-# JetBrains IDEs config folder
-.idea
