@@ -30,6 +30,14 @@ Builds the app in the `build` folder and starts it.
 
 Runs the tests.
 
+#### `yarn prettier`
+
+Runs `Prettier` in the `src` folder fixing all fixable issues.
+
+#### `yarn lint`
+
+Runs `ESLint` in the `src` folder fixing all fixable issues.
+
 #### `yarn release`
 
 Generates the changelog and increase the version from commit messages.
@@ -42,13 +50,13 @@ The most common convention for commit messages is the Angular convention which i
 
 Testing framework.
 
-#### [ESLint](https://eslint.org/)
-
-Code syntax analyzer.
-
 #### [Prettier](https://prettier.io)
 
 Code formatter.
+
+#### [ESLint](https://eslint.org/)
+
+Code syntax analyzer.
 
 #### [Husky](https://github.com/typicode/husky)
 
