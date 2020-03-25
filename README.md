@@ -8,13 +8,14 @@ Make sure [Node.js](https://nodejs.org/en/download), [Yarn](https://yarnpkg.com/
 2. Open `package.json` in your editor and change the values of: **name**, **description**, **repository**, **keywords**, **author**
 3. Run `yarn install`
 
-You are ready to go: edit `src/index.ts` and run `yarn start` to execute it.
+You are ready to go. Edit `src/index.ts` and run `yarn start` to execute it.
 
 ## Scripts
 
 #### `yarn start`
 
-Starts the app with hot reloading.\
+Starts the app with hot reloading.
+
 The app will refresh every time a file is changed in the `src` folder.
 
 #### `yarn build`
