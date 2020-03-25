@@ -4,8 +4,8 @@
 
 Make sure [Node.js](https://nodejs.org/en/download), [Yarn](https://yarnpkg.com/lang/en/docs/install/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) are installed in your system before starting.
 
-1. Clone the repo or click on **Use this template** (Green button on top of this page)
-2. Open `package.json` in your editor and change the values of: **name**, **description**, **repository**, **keywords**, **author**
+1. Clone or download the repo (Click on **Use this template** if you want to create your own repo)
+2. Open `package.json` in your editor and change the values of: **name**, **description**, **author**, **repository**, **keywords**
 3. Run `yarn install`
 
 You are ready to go. Edit `src/index.ts` and run `yarn start` to execute it.

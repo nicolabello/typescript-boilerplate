@@ -1,7 +1,19 @@
 {
-  "name": "typescript-boilerplate",
   "version": "1.0.0",
+  "name": "typescript-boilerplate",
   "description": "Project template to kickstart a new TypeScript project in seconds",
+  "author": "Nicola Bello <nicola.bello.3@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicolabello/typescript-boilerplate"
+  },
+  "keywords": [
+    "typescript",
+    "typescript-boilerplate",
+    "scaffolding",
+    "typescript-template"
+  ],
+  "license": "ISC",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -18,18 +30,6 @@
       "pre-commit": "yarn prettier && yarn lint"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nicolabello/typescript-boilerplate"
-  },
-  "keywords": [
-    "typescript",
-    "typescript-boilerplate",
-    "scaffolding",
-    "typescript-template"
-  ],
-  "author": "Nicola Bello <nicola.bello.3@gmail.com>",
-  "license": "ISC",
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "@types/node": "^12.12.31",
@@ -45,9 +45,7 @@
     "rimraf": "^3.0.0",
     "ts-jest": "^25.2.1",
     "ts-node": "^8.3.0",
-    "typescript": "^3.6.2"
-  },
-  "dependencies": {
+    "typescript": "^3.6.2",
     "standard-version": "^7.1.0"
   }
 }
