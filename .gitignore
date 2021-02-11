@@ -109,5 +109,8 @@ dist
 # JetBrains IDEs config
 .idea
 
+# Husky
+.husky
+
 # Build output
 build
